@@ -1,0 +1,435 @@
+/*--------- Google fonts ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+:root
+{
+	--primary-font: 'Poppins', sans-serif;
+
+	--primary-color: #f9ef23;   /*--- Yellow color ----*/
+	--secondry-color: #141414;  /*--- Black color ----*/
+	--third-color: #ffffff;     /*--- White color ----*/
+}
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body
+{
+	background-color: var(--secondry-color);
+	font-family: var(--primary-font);
+}
+
+.container
+{
+	padding: 1rem;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.heading
+{
+	color: var(--primary-color);
+	font-size: 2rem;
+	font-weight: 900;
+	font-style: italic;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+
+.white
+{
+	color: var(--third-color);
+}
+
+
+/*-------------- Hero styling starts ------------*/
+.hero
+{
+	height: 100vh;
+	background-image: url(https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?cs=srgb&dl=pexels-victor-freitas-841130.jpg&fm=jpg);
+	background-position: top center;
+	background-size: cover;
+}
+
+.logo
+{
+	color: var(--third-color);
+	font-weight: 800;
+}
+
+.content
+{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-heading
+{
+	color: var(--third-color);
+	font-size: 2.5rem;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.main-heading span
+{
+	color: var(--primary-color);
+}
+
+.btn
+{
+	margin-top: 1rem;
+	background-color: var(--primary-color);
+	border: none;
+	outline: none;
+	padding: 0.8rem 2rem;
+	transition: .5s;
+}
+
+.btn:hover
+{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.btn a
+{
+	color: var(--secondry-color);
+	text-decoration: none;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+/*-------------- Hero styling ends ------------*/
+
+
+
+/*-------------- About section styling start ---------*/
+.about .container
+{
+	padding: 3rem 1rem;
+}
+
+.about .container .row
+{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.btn-link
+{
+	margin-top: 2rem;
+	font-size: 1rem;
+	text-transform: capitalize;
+	border: none;
+	outline: none;
+	background-color: #ffffff00;
+}
+
+.btn-link a
+{
+	color: var(--third-color);
+	text-decoration: none;
+}
+/*-------------- About section styling end ---------*/
+
+
+/*-------------- Offer section styling start -----------*/
+.offer .container
+{
+	padding: 3rem 1rem;
+}
+
+.offer-card
+{
+	height: 60vh;
+	width: 100%;
+	margin: 2rem 0;
+	background-size: cover;
+	position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.offer-tour
+{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXwxg-5G6aQpn9qmfP6x2LAxtyUhrjo1yPg&usqp=CAU);
+}
+
+.offer-classes
+{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/582173226b8f5b121612ca03/1629194817853-NP40KJN0ZBZGUUJ0GBC3/Hawthorn_Gym_Group_Classes_Welcome-01.png?format=2500w);
+}
+
+.offer-training
+{
+	background-image: url(data:image/jpeg;base64,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);
+}
+
+.offer-name
+{
+	color: var(--third-color);
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-style: italic;
+	text-align: center;
+}
+/*-------------- Offer section styling end -----------*/
+
+
+/*-------------- Testimonial section styling start ---------*/
+.testimonial .container
+{
+	padding: 2rem 1rem;
+}
+
+.review-card
+{
+	margin: 1.5rem 0;
+}
+
+.author-pic
+{
+	height: 45vh;
+	background-size: cover;
+	background-position: top center;
+}
+
+.author-pic-a
+{
+	background-image: url(https://us.123rf.com/450wm/dmitryag/dmitryag2307/dmitryag230708360/208755655-african-woman-gym-sport-young-activity-athlete-fit-american-fitness-female-rope-generative-ai.jpg?ver=6);
+	background-position: center center;
+}
+
+.author-pic-b
+{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9uV9zBPXVDGGL097pJU2WgCCVQEVrUOyiA&usqp=CAU);
+}
+
+.author-pic-c
+{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHG3bgI8Yf5DnKD6sH11vRdClOdose0i0qzQHYxvr-c-wNMmpiaxiRjpp88bJwxf8U_EI&usqp=CAU);
+}
+
+.review-content
+{
+	background-color: var(--primary-color);
+	padding: 1rem;
+}
+
+.author-name
+{
+	font-size: 1.2rem;
+	font-style: italic;
+}
+/*-------------- Testimonial section styling end ---------*/
+
+
+
+/*-------------- Footer widget styling start -------------*/
+.footer-widget
+{
+	height: 60vh;
+	background-image: url(https://us.123rf.com/450wm/marselin888/marselin8882307/marselin888230705844/208768443-equipment-and-machines-at-the-modern-gym-room-fitness-center-interior-with-equipment-bodybuilding.jpg?ver=6);
+	background-size: cover;
+	background-position: center center;
+}
+
+.footer-widget .container
+{
+	padding: 2rem 2rem;
+}
+/*-------------- Footer widget styling end -------------*/
+
+
+
+/*------------ copyright styling start -------------*/
+.footer-bottom
+{
+	background: var(--primary-color);
+}
+
+.footer-bottom .container
+{
+	padding: 2rem 1.5rem;
+}
+
+.footer-bottom .container .row .col
+{
+	margin: 1.5rem 0;
+}
+
+.contact-heading
+{
+	text-transform: uppercase;
+	font-style: italic;
+}
+/*------------ copyright styling end -------------*/
+
+
+/*------------------------------------------------------------*/
+/*---------------- For desktop screen styling ------------------*/
+/*------------------------------------------------------------*/
+@media screen and (min-width: 768px)
+{
+	.container
+	{
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+
+	.heading
+	{
+		font-size: 3.5rem;
+	}
+
+
+	/*---------- Hero section styling ------------*/
+	.hero .container
+	{
+		padding: 2.5rem 5rem;
+	}
+
+	.logo
+	{
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.main-heading
+	{
+		font-size: 6.5rem;
+		font-weight: 800;
+	}
+
+	.btn a
+	{
+		font-size: 1.5rem;
+	}
+
+
+	/*--------------- About section --------------*/
+	.about .container
+	{
+		padding: 6rem 4rem;
+	}
+
+	.about .container .row
+	{
+		flex-direction: row;
+		gap: 5rem;
+	}
+
+	.about-content
+	{
+		width: 40%;
+	}
+
+	.about-img
+	{
+		width: 55%;
+	}
+
+	.btn-link
+	{
+		font-size: 1.3rem;
+	}
+
+
+	/*-------------- Offer section ----------*/
+	.offer .container
+	{
+		padding: 1rem 4rem;
+	}
+
+	.offer .container .heading, .offer .container .sub-heading
+	{
+		text-align: center;
+	}
+
+	.offer .container .row
+	{
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+		width: 100%;
+	}
+
+	.offer .container .row .col
+	{
+		width: 100%;
+	}
+
+	/*-------------- Testimonial section --------------*/
+	.testimonial
+	{
+		/*margin: 2rem 0*/
+	}
+
+	.testimonial .container
+	{
+		padding: 6rem 4rem;
+	}
+
+	.testimonial .container .heading
+	{
+		text-align: center;
+	}
+
+	.testimonial .container .row
+	{
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+		width: 100%;
+	}
+
+
+	/*--------------- Footer ---------------*/
+	.footer-widget
+	{
+		height: 70vh;
+	}
+
+	.footer-widget .container
+	{
+		padding: 6rem 4rem;
+	}
+
+
+	/*--------------- Footer bottom ----------------*/
+	.footer-bottom .container
+	{
+		padding: 2rem 4rem;
+	}
+
+	.footer-bottom .container .row
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+}
